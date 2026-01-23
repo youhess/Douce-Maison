@@ -1,0 +1,127 @@
+import React, { useEffect, useState } from 'react';
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel';
+import { Button } from '@/components/ui/button';
+import Autoplay from "embla-carousel-autoplay"
+import { cn } from "@/lib/utils";
+
+export const HeroSliderSection: React.FC = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
+  const onDotClick = (index: number) => {
+    api?.scrollTo(index);
+  };
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
+  return (
+    <section className="w-full relative bg-gray-50 mb-8 md:mb-12 group">
+      <Carousel 
+        setApi={setApi} 
+        plugins={[plugin.current]}
+        className="w-full"
+        opts={{
+            loop: true,
+        }}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
+        <CarouselContent>
+          {/* Slide 1: SOLDES */}
+          <CarouselItem>
+            <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-[#F5F5F5] flex items-center justify-center overflow-hidden">
+                <a href="#" className='block w-full h-full relative'>
+                     <picture className="w-full h-full object-cover">
+                        <source media="(min-width: 1024px)" srcSet="//www.isotoner.fr/cdn/shop/files/Slider-desktop-Soldes-AH25_26668d2b-7df2-440b-a093-62b58390a16f.jpg?v=1768556381" />
+                        <img 
+                            className="w-full h-full object-cover" 
+                            src="//www.isotoner.fr/cdn/shop/files/Slider-mobile-Soldes-AH25_ba8e9b5c-8795-4e23-b764-db785edb4e4d.jpg?v=1768556380" 
+                            alt="SOLDES" 
+                        />
+                    </picture>
+                </a>
+                
+                {/* Content Overlay */}
+                <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none">
+                    <div className="container px-4 text-center space-y-6">
+  
+                    </div>
+                </div>
+            </div>
+          </CarouselItem>
+
+           {/* Slide 2: COLLECTION GANTS */}
+           <CarouselItem>
+            <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-slate-100 flex items-center justify-center overflow-hidden">
+                 <a href="#" className='block w-full h-full relative'>
+                    <picture className="w-full h-full object-cover block">
+                        <source media="(min-width: 1024px)" srcSet="//www.isotoner.fr/cdn/shop/files/Slider-desktop-AH25-gants-v2.jpg?v=1765296980" />
+                        <img 
+                            className="w-full h-full object-cover" 
+                            src="//www.isotoner.fr/cdn/shop/files/Slider-mobile-AH25-gants_2657bf80-2060-402c-b90b-007fd696c220.jpg?v=1767779498" 
+                            alt="COLLECTION GANTS" 
+                        />
+                    </picture>
+                 </a>
+
+                 <div className="absolute inset-0 flex flex-col justify-end pb-16 md:justify-center md:pb-0 items-end pointer-events-none">
+                     <div className="container px-4 text-center md:text-right space-y-6 md:space-y-8 md:pr-20">
+                        <h2 className="text-white font-black tracking-wide text-4xl md:text-5xl lg:text-[4rem] uppercase drop-shadow-md">
+                            COLLECTION GANTS
+                        </h2>
+                        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-end items-center">
+                             <Button 
+                                variant="outline" 
+                                asChild
+                                className="pointer-events-auto min-w-[160px] bg-transparent border-white text-white hover:bg-white hover:text-black rounded-[2px] px-8 py-6 text-sm font-semibold tracking-widest transition-colors duration-300 uppercase h-auto"
+                            >
+                                <a href="#">FEMME</a>
+                            </Button>
+                             <Button 
+                                variant="outline" 
+                                asChild
+                                className="pointer-events-auto min-w-[160px] bg-transparent border-white text-white hover:bg-white hover:text-black rounded-[2px] px-8 py-6 text-sm font-semibold tracking-widest transition-colors duration-300 uppercase h-auto"
+                            >
+                                <a href="#">HOMME</a>
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </CarouselItem>
+        </CarouselContent>
+      </Carousel>
+
+      {/* Pagination Dots */}
+      <div className="absolute bottom-6 right-6 md:bottom-10 w-full flex justify-end pr-6 md:pr-0 gap-3 z-20 pointer-events-none">
+        {Array.from({ length: count }).map((_, index) => (
+            <button
+                key={index}
+                className={cn(
+                    "w-2.5 h-2.5 rounded-full transition-all duration-300 pointer-events-auto shadow-sm",
+                    current === index ? "bg-white scale-110" : "bg-white/50 hover:bg-white/80"
+                )}
+                onClick={() => onDotClick(index)}
+                aria-label={`Go to slide ${index + 1}`}
+            />
+        ))}
+      </div>
+    </section>
+  );
+};

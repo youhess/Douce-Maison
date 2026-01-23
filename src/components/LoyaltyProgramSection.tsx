@@ -1,0 +1,63 @@
+import React from 'react';
+import { Button } from '@/components/ui/button';
+
+export const LoyaltyProgramSection: React.FC = () => {
+    return (
+        <section className="bg-[#EEEBE6] py-16 md:py-24">
+            <div className="max-w-7xl mx-auto px-4 md:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 lg:gap-20 items-center">
+                    
+                    {/* Left Content Column */}
+                    <div className="flex flex-col">
+                        {/* Headers */}
+                        <div className="mb-10 text-center lg:text-left">
+                            <h2 className="text-xl md:text-2xl font-medium uppercase tracking-widest text-[#1A1A1A] mb-2">
+                                Programme de fidélité
+                            </h2>
+                            <p className="text-[#666666] text-sm md:text-base tracking-wide">
+                                Toujours plus de récompenses
+                            </p>
+                        </div>
+
+                        {/* Steps grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-[#1A1A1A]">
+                            {[
+                                { step: '01', title: 'Créez un compte' },
+                                { step: '02', title: 'Cumulez des points', subtitle: 'à chaque achat' },
+                                { step: '03', title: "1€ d'achats = 1 point" }
+                            ].map((item, idx) => (
+                                <div key={idx} className="bg-white p-6 rounded-md shadow-sm border border-gray-100/50 flex flex-col items-start justify-center h-40 transition-transform hover:-translate-y-1 duration-300">
+                                    <span className="text-3xl font-bold mb-4">{item.step}</span>
+                                    <div className="uppercase text-xs font-bold leading-relaxed tracking-wider">
+                                        <p>{item.title}</p>
+                                        {item.subtitle && <p>{item.subtitle}</p>}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* CTA Button */}
+                        <div className="text-center lg:text-left">
+                            <Button 
+                                variant="outline" 
+                                className="border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white uppercase font-bold text-xs tracking-[0.1em] px-8 h-12 rounded-sm bg-transparent transition-colors"
+                            >
+                                J'adhère gratuitement
+                            </Button>
+                        </div>
+                    </div>
+
+                    {/* Right Image Column */}
+                    <div className="w-full relative rounded-md overflow-hidden aspect-[3/2] shadow-lg">
+                        <img 
+                            src="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=lifestyle%20photography%20of%20a%20happy%20couple%20relaxing%20on%20a%20beige%20sofa%20reading%20books%20wearing%20comfortable%20loungewear%20warm%20natural%20lighting%20cozy%20home%20interior&width=800&height=600" 
+                            alt="Programme de fidélité" 
+                            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
+                        />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    );
+};
