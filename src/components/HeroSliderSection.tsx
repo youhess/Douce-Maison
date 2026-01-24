@@ -80,7 +80,7 @@ export const HeroSliderSection: React.FC = () => {
                     </picture>
                  </a>
 
-                 <div className="absolute inset-0 flex flex-col justify-end pb-16 md:justify-center md:pb-0 items-end pointer-events-none">
+                 <div className="absolute inset-0 flex flex-col justify-end pb-16 md:justify-center md:pb-0 items-center pointer-events-none">
                      <div className="container px-4 text-center space-y-6 md:space-y-8">
                         <h2 className="text-white font-black tracking-wide text-4xl md:text-5xl lg:text-[4rem] uppercase drop-shadow-md">
                             COLLECTION GANTS
