@@ -108,9 +108,7 @@ export const FeaturedCollectionSplitSection: React.FC = () => {
                             className="absolute inset-0 w-full h-full object-contain mix-blend-multiply p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100" 
                         />
                         
-                        <Badge className="absolute top-2 left-2 bg-red-600 hover:bg-red-700 text-white rounded-sm px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider">
-                            New
-                        </Badge>
+             
                         <Button size="icon" variant="ghost" className="absolute top-2 right-2 h-8 w-8 rounded-full bg-white/80 hover:bg-white text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity">
                             <Heart className="w-4 h-4" />
                         </Button>

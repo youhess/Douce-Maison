@@ -1,90 +1,198 @@
 import React from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
+import { 
+    Gift, 
+    RotateCcw, 
+    Lock, 
+    MessageCircle, 
+    Timer, 
+    Instagram, 
+    Facebook, 
+    Youtube, 
+    Twitter, 
+    Mail, 
+    ArrowRight 
+} from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#1C1C1C] text-white pt-16 pb-8 text-sm">
-      <div className="container mx-auto px-4">
-        
-        {/* Footer Top: Brand + Newsletter */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16 border-b border-gray-800 pb-12">
+    <footer className="bg-white text-[#1A1A1A] pb-8 pt-12">
+        <div className="container mx-auto">
             
-            {/* Brand Block */}
-            <div className="space-y-6 lg:w-1/3">
-                 <div className="text-3xl font-black tracking-tighter uppercase font-serif">isotoner</div>
-                 <div className="flex gap-4">
-                    <Button variant="ghost" size="icon" className="hover:text-gray-300 hover:bg-transparent"><Facebook className="h-5 w-5" /></Button>
-                    <Button variant="ghost" size="icon" className="hover:text-gray-300 hover:bg-transparent"><Instagram className="h-5 w-5" /></Button>
-                    <Button variant="ghost" size="icon" className="hover:text-gray-300 hover:bg-transparent"><Youtube className="h-5 w-5" /></Button>
-                    <Button variant="ghost" size="icon" className="hover:text-gray-300 hover:bg-transparent"><Twitter className="h-5 w-5" /></Button>
+            {/* 1. Trust Bar (Reassurance) */}
+             <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-16 justify-items-center text-center">
+                 {/* Item 1 */}
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                     <Gift strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
+                     <div className="text-xs tracking-wide">
+                         <p className="font-bold uppercase mb-1">Fidélité récompensée</p>
+                         <p className="text-gray-500">1€ d'achats = 1 point</p>
+                     </div>
+                 </div>
+                  {/* Item 2 */}
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                     <RotateCcw strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
+                     <div className="text-xs tracking-wide">
+                          <p className="font-bold uppercase mb-1">Satisfait ou remboursé</p>
+                          <p className="text-gray-500">15 jours pour changer d'avis</p>
+                     </div>
+                 </div>
+                 {/* Item 3 */}
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                     <Lock strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
+                     <div className="text-xs tracking-wide">
+                          <p className="font-bold uppercase mb-1">Paiement sécurisé</p>
+                          <div className="flex items-center gap-2 justify-center">
+                             <div className="text-[10px] font-bold">Visa / MC / PayPal / Alma</div>
+                          </div>
+                     </div>
+                 </div>
+                 {/* Item 4 */}
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                     <MessageCircle strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
+                     <div className="text-xs tracking-wide">
+                          <p className="font-bold uppercase mb-1">Un service client à votre écoute</p>
+                          <p className="text-gray-500">contacter par mail</p>
+                     </div>
+                 </div>
+                  {/* Item 5 */}
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                     <Timer strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
+                     <div className="text-xs tracking-wide">
+                          <p className="font-bold uppercase mb-1">Livraison rapide</p>
+                          <p className="text-gray-500">et offerte dès 39€ d'achats</p>
+                     </div>
+                 </div>
+             </div>
+
+            {/* 2. Brand & Newsletter (Light Gray Rounded Card) */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-3 mb-6">
+                
+                {/* Left: Brand + Socials */}
+                <div className="bg-[#F4F4F4] rounded-[10px] p-8 lg:p-12 lg:pr-64 flex flex-col items-center justify-center space-y-8">
+                        {/* Brand Logo - Serif Text */}
+                        <div className="text-6xl font-serif font-bold tracking-tight text-center">
+                        isotoner
+                        </div>
+                        
+                        {/* Social Icons */}
+                        <div className="flex gap-4">
+                        {[
+                            { Icon: Instagram, href: "#" },
+                            { Icon: Facebook, href: "#" },
+                            { Icon: Twitter, href: "#" }, // Pinterest placeholder
+                            { Icon: Youtube, href: "#" }
+                        ].map((social, idx) => (
+                            <a key={idx} href={social.href} className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors">
+                                <social.Icon size={18} strokeWidth={1.5} />
+                            </a>
+                        ))}
+                        </div>
+                </div>
+
+                {/* Right: Newsletter Form */}
+                <div className="bg-[#F4F4F4] rounded-[10px] p-8 lg:p-12 flex flex-col justify-center gap-6">
+                    <div className="flex items-start gap-4">
+                        <div className="bg-white w-12 h-12 rounded-[10px] flex items-center justify-center shadow-sm shrink-0">
+                            <Mail className="w-6 h-6" strokeWidth={1.5} />
+                        </div>
+                        <div>
+                            <h3 className="uppercase font-bold text-lg tracking-wide leading-tight">Inscrivez-vous à notre Newsletter</h3>
+                            <p className="text-gray-500 text-sm mt-1">Offre de bienvenue : -10% sur votre 1ère commande</p>
+                        </div>
+                    </div>
+                        
+                    <div className="relative w-full">
+                        <Input 
+                            placeholder="Votre e-mail" 
+                            className="bg-[#EBEBEB] border-none h-14 rounded-[5px] pl-4 pr-14 text-base placeholder:text-gray-500 focus-visible:ring-0" 
+                        />
+                            <Button size="icon" className="absolute right-2 top-1/2 -translate-y-1/2 h-10 w-10 bg-transparent text-black hover:bg-black/5 rounded-sm">
+                            <ArrowRight className="w-5 h-5" />
+                            </Button>
+                    </div>
+                </div>
+
+            </div>
+
+            {/* 3. Main Navigation (Black Rounded Card) */}
+            <div className="bg-black text-white rounded-[10px] p-8 lg:p-16 mb-12 min-h-[425px]">
+                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12 gap-x-8"> 
+                    
+                    {/* Column 1 */}
+                    <div>
+                        <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Besoin d'aide ?</h4>
+                         <ul className="space-y-4 text-[18px] text-gray-400">
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">FAQ</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Nous contacter</a></li>
+                         </ul>
+                    </div>
+
+                    {/* Column 2 */}
+                    <div>
+                        <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Commandes</h4>
+                         <ul className="space-y-4 text-[18px] text-gray-400">
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Livraison rapide</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Paiement sécurisé</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Suivi de commande</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Retour & remboursement</a></li>
+                         </ul>
+                    </div>
+
+                    {/* Column 3 */}
+                    <div>
+                        <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Services</h4>
+                         <ul className="space-y-4 text-[18px] text-gray-400">
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Programme de fidélité</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">E-Carte Cadeau</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Conditions des offres</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Le CLUB Isotoner</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Cadeaux d'affaires</a></li>
+                         </ul>
+                    </div>
+
+                    {/* Column 4 */}
+                    <div>
+                        <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Conseils</h4>
+                         <ul className="space-y-4 text-[18px] text-gray-400">
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Guide des parapluies</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Guide des tailles</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Guide des gants</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Guide des ceintures</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Conseil produits</a></li>
+                         </ul>
+                    </div>
+                    
+                    {/* Column 5 */}
+                    <div>
+                        <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Isotoner</h4>
+                         <ul className="space-y-4 text-[18px] text-gray-400">
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">La maison Isotoner</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Points de vente</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Boutique officielle</a></li>
+                            <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Fiches environnementales</a></li>
+                         </ul>
+                    </div>
+
                  </div>
             </div>
 
-            {/* Newsletter Block */}
-            <div className="lg:w-1/3 bg-gray-100/5 p-6 rounded-sm">
-                <h3 className="font-bold mb-2 uppercase tracking-wide">Inscrivez-vous à notre newsletter</h3>
-                <p className="text-gray-400 text-xs mb-4">Offre de bienvenue -10% sur votre 1ère commande</p>
-                <div className="flex gap-2">
-                    <Input placeholder="Votre e-mail" className="bg-white/10 border-none text-white placeholder:text-gray-500 rounded-none focus-visible:ring-1 focus-visible:ring-white" />
-                    <Button variant="secondary" className="rounded-none bg-white text-black hover:bg-gray-200">→</Button>
-                </div>
+            {/* 4. Legal Links */}
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-[10px] text-gray-500 uppercase tracking-wider font-medium">
+                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <a href="#" className="hover:text-black transition-colors">Conditions générales de vente</a>
+                    <a href="#" className="hover:text-black transition-colors">Politique de confidentialité</a>
+                    <a href="#" className="hover:text-black transition-colors">Mentions légales</a>
+                    <a href="#" className="hover:text-black transition-colors">Plan du site</a>
+                    <a href="#" className="hover:text-black transition-colors">Ouvrir les préférences Cookies</a>
+                 </div>
+                 <div className="text-center lg:text-right">
+                    Réalisé par <a href="#" className="hover:underline text-black">W3lead</a> pour Isotoner
+                 </div>
             </div>
-        </div>
 
-        {/* Footer Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            <div>
-                <h4 className="font-bold uppercase mb-6 tracking-wider text-xs">Besoin d'aide ?</h4>
-                <ul className="space-y-3 text-gray-400 text-xs">
-                    <li><a href="#" className="hover:text-white">FAQ</a></li>
-                    <li><a href="#" className="hover:text-white">Nous contacter</a></li>
-                </ul>
-            </div>
-             <div>
-                <h4 className="font-bold uppercase mb-6 tracking-wider text-xs">Commandes</h4>
-                <ul className="space-y-3 text-gray-400 text-xs">
-                    <li><a href="#" className="hover:text-white">Livraison rapide</a></li>
-                    <li><a href="#" className="hover:text-white">Paiement sécurisé</a></li>
-                    <li><a href="#" className="hover:text-white">Suivi de commande</a></li>
-                    <li><a href="#" className="hover:text-white">Retour & remboursement</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 className="font-bold uppercase mb-6 tracking-wider text-xs">Services</h4>
-                <ul className="space-y-3 text-gray-400 text-xs">
-                     <li><a href="#" className="hover:text-white">Programme de fidélité</a></li>
-                     <li><a href="#" className="hover:text-white">E-Carte Cadeau</a></li>
-                     <li><a href="#" className="hover:text-white">Conditions des offres en cours</a></li>
-                     <li><a href="#" className="hover:text-white">Le CLUB Isotoner (achat en magasin)</a></li>
-                </ul>
-            </div>
-             <div>
-                <h4 className="font-bold uppercase mb-6 tracking-wider text-xs">Conseils</h4>
-                <ul className="space-y-3 text-gray-400 text-xs">
-                    <li><a href="#" className="hover:text-white">Guide des parapluies</a></li>
-                    <li><a href="#" className="hover:text-white">Guide des tailles chaussons</a></li>
-                    <li><a href="#" className="hover:text-white">Guide des gants</a></li>
-                    <li><a href="#" className="hover:text-white">Conseil produits</a></li>
-                </ul>
-            </div>
         </div>
-
-        {/* Footer Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 border-t border-gray-800 pt-8">
-            <div className="flex gap-4 mb-4 md:mb-0">
-                <a href="#" className="hover:text-white">Conditions générales de vente</a>
-                <a href="#" className="hover:text-white">Politique de confidentialité</a>
-                <a href="#" className="hover:text-white">Mentions légales</a>
-                <a href="#" className="hover:text-white">Plan du site</a>
-                <a href="#" className="hover:text-white">Ouvrir les préférences Cookies</a>
-            </div>
-            <div>
-                Réalisé par W3lead pour Isotoner
-            </div>
-        </div>
-      </div>
     </footer>
   );
 };

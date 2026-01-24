@@ -4,11 +4,11 @@ import { Button } from '@/components/ui/button';
 export const LoyaltyProgramSection: React.FC = () => {
     return (
         <section className="bg-[#EEEBE6] py-16 md:py-24">
-            <div className="max-w-7xl mx-auto px-4 md:px-12">
+            <div className="w-full mx-auto px-4 md:px-12 lg:px-[162px]">
                 <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 lg:gap-20 items-center">
                     
                     {/* Left Content Column */}
-                    <div className="flex flex-col">
+                    <div className="flex flex-col lg:-mt-[200px]">
                         {/* Headers */}
                         <div className="mb-10 text-center lg:text-left">
                             <h2 className="text-xl md:text-2xl font-medium uppercase tracking-widest text-[#1A1A1A] mb-2">
@@ -26,7 +26,7 @@ export const LoyaltyProgramSection: React.FC = () => {
                                 { step: '02', title: 'Cumulez des points', subtitle: 'à chaque achat' },
                                 { step: '03', title: "1€ d'achats = 1 point" }
                             ].map((item, idx) => (
-                                <div key={idx} className="bg-white p-6 rounded-md shadow-sm border border-gray-100/50 flex flex-col items-start justify-center h-40 transition-transform hover:-translate-y-1 duration-300">
+                                <div key={idx} className="bg-white p-6 rounded-md shadow-sm border border-gray-100/50 flex flex-col items-start justify-center h-[137px] transition-transform hover:-translate-y-1 duration-300">
                                     <span className="text-3xl font-bold mb-4">{item.step}</span>
                                     <div className="uppercase text-xs font-bold leading-relaxed tracking-wider">
                                         <p>{item.title}</p>

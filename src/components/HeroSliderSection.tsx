@@ -48,10 +48,10 @@ export const HeroSliderSection: React.FC = () => {
             <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-[#F5F5F5] flex items-center justify-center overflow-hidden">
                 <a href="#" className='block w-full h-full relative'>
                      <picture className="w-full h-full object-cover">
-                        <source media="(min-width: 1024px)" srcSet="//www.isotoner.fr/cdn/shop/files/Slider-desktop-Soldes-AH25_26668d2b-7df2-440b-a093-62b58390a16f.jpg?v=1768556381" />
+                        <source media="(min-width: 1024px)" srcSet="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=large%20fashion%20sale%20banner%20winter%20collection%20clean%20minimal%20layout&width=1920&height=860" />
                         <img 
                             className="w-full h-full object-cover" 
-                            src="//www.isotoner.fr/cdn/shop/files/Slider-mobile-Soldes-AH25_ba8e9b5c-8795-4e23-b764-db785edb4e4d.jpg?v=1768556380" 
+                            src="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=mobile%20fashion%20sale%20banner%20winter%20collection%20clean%20minimal%20layout&width=375&height=500" 
                             alt="SOLDES" 
                         />
                     </picture>
@@ -71,21 +71,21 @@ export const HeroSliderSection: React.FC = () => {
             <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-slate-100 flex items-center justify-center overflow-hidden">
                  <a href="#" className='block w-full h-full relative'>
                     <picture className="w-full h-full object-cover block">
-                        <source media="(min-width: 1024px)" srcSet="//www.isotoner.fr/cdn/shop/files/Slider-desktop-AH25-gants-v2.jpg?v=1765296980" />
+                        <source media="(min-width: 1024px)" srcSet="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=elegant%20gloves%20collection%20hero%20banner%20studio%20lighting%20dark%20background&width=1920&height=860" />
                         <img 
                             className="w-full h-full object-cover" 
-                            src="//www.isotoner.fr/cdn/shop/files/Slider-mobile-AH25-gants_2657bf80-2060-402c-b90b-007fd696c220.jpg?v=1767779498" 
+                            src="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=gloves%20collection%20hero%20banner%20studio%20lighting%20dark%20background%20mobile&width=375&height=500" 
                             alt="COLLECTION GANTS" 
                         />
                     </picture>
                  </a>
 
                  <div className="absolute inset-0 flex flex-col justify-end pb-16 md:justify-center md:pb-0 items-end pointer-events-none">
-                     <div className="container px-4 text-center md:text-right space-y-6 md:space-y-8 md:pr-20">
+                     <div className="container px-4 text-center space-y-6 md:space-y-8">
                         <h2 className="text-white font-black tracking-wide text-4xl md:text-5xl lg:text-[4rem] uppercase drop-shadow-md">
                             COLLECTION GANTS
                         </h2>
-                        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-end items-center">
+                        <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
                              <Button 
                                 variant="outline" 
                                 asChild
