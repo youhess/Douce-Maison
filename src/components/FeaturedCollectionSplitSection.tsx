@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Heart } from 'lucide-react';
 
 const products = [
@@ -54,7 +53,7 @@ const allProducts = [
 export const FeaturedCollectionSplitSection: React.FC = () => {
   return (
     <section className="py-12 w-full px-4 bg-white flex justify-center">
-      <div className="grid grid-cols-1 lg:grid-cols-[auto_340px] gap-8 relative items-start justify-center max-w-full">
+      <div className="flex flex-col lg:flex-row gap-8 relative items-start justify-center max-w-full">
         
         {/* Left Column: Sticky Banner */}
         <div className="hidden lg:block lg:sticky lg:top-[100px] relative w-[1200px] h-[900px] rounded-md overflow-hidden group">
@@ -91,7 +90,7 @@ export const FeaturedCollectionSplitSection: React.FC = () => {
         </div>
 
         {/* Right Column: Natural Scrolling Product List */}
-        <div className="w-full flex flex-col gap-6">
+        <div className="w-full flex flex-col gap-6 lg:w-[340px] shrink-0">
              {allProducts.map((product) => (
                 <div key={product.id} className="group relative bg-white rounded-md flex flex-col overflow-hidden w-full border border-gray-100/50 hover:border-gray-200 transition-all hover:shadow-sm">
                     
@@ -117,7 +116,7 @@ export const FeaturedCollectionSplitSection: React.FC = () => {
                     {/* Info Container */}
                     <div className="relative flex-1 p-4 bg-white">
                         {/* Default Content */}
-                        <div className="grid gap-1 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:-translate-y-2 group-hover:pointer-events-none">
+                        <div className="flex flex-col gap-1 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:-translate-y-2 group-hover:pointer-events-none">
                             <h3 className="text-[14px] font-medium leading-tight line-clamp-2 text-gray-800 h-10">{product.title}</h3>
                             <div className="text-gray-500 text-[11px] truncate">
                                 Velours - Semelle ergonomique

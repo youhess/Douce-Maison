@@ -1,8 +1,6 @@
 import React from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { cn } from "@/lib/utils";
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const categories = {
     femme: [
@@ -28,20 +26,7 @@ const categories = {
     ],
 };
 
-const CustomCarouselButton = ({ direction, className, ...props }: { direction: 'left' | 'right', className?: string } & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
-    return (
-        <button 
-            className={cn(
-                "absolute top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-12 h-12 bg-white/80 backdrop-blur-sm border border-gray-100 hover:bg-white text-gray-800 transition-all shadow-sm",
-                direction === 'left' ? "left-0" : "right-0",
-                className
-            )}
-            {...props}
-        >
-            {direction === 'left' ? <ChevronLeft className="w-6 h-6" /> : <ChevronRight className="w-6 h-6" />}
-        </button>
-    )
-}
+
 
 export const CollectionsRecommendationsSection: React.FC = () => {
   return (

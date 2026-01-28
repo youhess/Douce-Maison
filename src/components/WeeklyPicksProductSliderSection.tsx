@@ -1,8 +1,5 @@
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Heart } from 'lucide-react';
 
 const products = [
     { 
@@ -81,7 +78,7 @@ export const WeeklyPicksProductSliderSection: React.FC = () => {
                             {/* Info Container */}
                             <div className="relative flex-1 p-4 bg-white">
                                 {/* Default Content */}
-                                <div className="grid gap-1 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:-translate-y-2 group-hover:pointer-events-none">
+                                <div className="flex flex-col gap-1 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:-translate-y-2 group-hover:pointer-events-none">
                                     <h3 className="text-[14px] font-medium leading-tight line-clamp-2 text-gray-800 h-10">{product.title}</h3>
                                     <div className="text-gray-500 text-[11px] truncate">
                                       Velours - Semelle ergonomique

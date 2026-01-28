@@ -21,9 +21,9 @@ export const Footer: React.FC = () => {
         <div className="container mx-auto">
             
             {/* 1. Trust Bar (Reassurance) */}
-             <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-16 justify-items-center text-center">
+             <div className="flex flex-wrap justify-center gap-8 mb-16 text-center">
                  {/* Item 1 */}
-                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer w-[40%] lg:w-auto lg:flex-1">
                      <Gift strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
                      <div className="text-xs tracking-wide">
                          <p className="font-bold uppercase mb-1">Fidélité récompensée</p>
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
                      </div>
                  </div>
                   {/* Item 2 */}
-                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer w-[40%] lg:w-auto lg:flex-1">
                      <RotateCcw strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
                      <div className="text-xs tracking-wide">
                           <p className="font-bold uppercase mb-1">Satisfait ou remboursé</p>
@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
                      </div>
                  </div>
                  {/* Item 3 */}
-                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer w-[40%] lg:w-auto lg:flex-1">
                      <Lock strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
                      <div className="text-xs tracking-wide">
                           <p className="font-bold uppercase mb-1">Paiement sécurisé</p>
@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
                      </div>
                  </div>
                  {/* Item 4 */}
-                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer w-[40%] lg:w-auto lg:flex-1">
                      <MessageCircle strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
                      <div className="text-xs tracking-wide">
                           <p className="font-bold uppercase mb-1">Un service client à votre écoute</p>
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
                      </div>
                  </div>
                   {/* Item 5 */}
-                 <div className="flex flex-col items-center gap-3 group cursor-pointer">
+                 <div className="flex flex-col items-center gap-3 group cursor-pointer w-[40%] lg:w-auto lg:flex-1">
                      <Timer strokeWidth={1} className="w-10 h-10 lg:w-[40px] lg:h-[40px]" />
                      <div className="text-xs tracking-wide">
                           <p className="font-bold uppercase mb-1">Livraison rapide</p>
@@ -67,10 +67,10 @@ export const Footer: React.FC = () => {
              </div>
 
             {/* 2. Brand & Newsletter (Light Gray Rounded Card) */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-3 mb-6">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-3 mb-6">
                 
                 {/* Left: Brand + Socials */}
-                <div className="bg-[#F4F4F4] rounded-[10px] p-8 lg:p-12 lg:pr-64 flex flex-col items-center justify-center space-y-8">
+                <div className="bg-[#F4F4F4] rounded-[10px] p-8 lg:p-12 lg:pr-64 flex flex-col items-center justify-center space-y-8 w-full lg:flex-1">
                         {/* Brand Logo - Serif Text */}
                         <div className="text-6xl font-serif font-bold tracking-tight text-center">
                         isotoner
@@ -92,7 +92,7 @@ export const Footer: React.FC = () => {
                 </div>
 
                 {/* Right: Newsletter Form */}
-                <div className="bg-[#F4F4F4] rounded-[10px] p-8 lg:p-12 flex flex-col justify-center gap-6">
+                <div className="bg-[#F4F4F4] rounded-[10px] p-8 lg:p-12 flex flex-col justify-center gap-6 w-full lg:flex-1">
                     <div className="flex items-start gap-4">
                         <div className="bg-white w-12 h-12 rounded-[10px] flex items-center justify-center shadow-sm shrink-0">
                             <Mail className="w-6 h-6" strokeWidth={1.5} />
@@ -118,10 +118,10 @@ export const Footer: React.FC = () => {
 
             {/* 3. Main Navigation (Black Rounded Card) */}
             <div className="bg-black text-white rounded-[10px] p-8 lg:p-16 mb-12 min-h-[425px]">
-                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12 gap-x-8"> 
+                 <div className="flex flex-wrap gap-y-12 gap-x-8 justify-between"> 
                     
                     {/* Column 1 */}
-                    <div>
+                    <div className="w-[45%] md:w-[30%] lg:w-auto lg:flex-1">
                         <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Besoin d'aide ?</h4>
                          <ul className="space-y-4 text-[18px] text-gray-400">
                             <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">FAQ</a></li>
@@ -130,7 +130,7 @@ export const Footer: React.FC = () => {
                     </div>
 
                     {/* Column 2 */}
-                    <div>
+                    <div className="w-[45%] md:w-[30%] lg:w-auto lg:flex-1">
                         <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Commandes</h4>
                          <ul className="space-y-4 text-[18px] text-gray-400">
                             <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Livraison rapide</a></li>
@@ -141,7 +141,7 @@ export const Footer: React.FC = () => {
                     </div>
 
                     {/* Column 3 */}
-                    <div>
+                    <div className="w-[45%] md:w-[30%] lg:w-auto lg:flex-1">
                         <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Services</h4>
                          <ul className="space-y-4 text-[18px] text-gray-400">
                             <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Programme de fidélité</a></li>
@@ -153,7 +153,7 @@ export const Footer: React.FC = () => {
                     </div>
 
                     {/* Column 4 */}
-                    <div>
+                    <div className="w-[45%] md:w-[30%] lg:w-auto lg:flex-1">
                         <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Conseils</h4>
                          <ul className="space-y-4 text-[18px] text-gray-400">
                             <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Guide des parapluies</a></li>
@@ -165,7 +165,7 @@ export const Footer: React.FC = () => {
                     </div>
                     
                     {/* Column 5 */}
-                    <div>
+                    <div className="w-[45%] md:w-[30%] lg:w-auto lg:flex-1">
                         <h4 className="font-bold uppercase text-[20px] tracking-widest mb-6">Isotoner</h4>
                          <ul className="space-y-4 text-[18px] text-gray-400">
                             <li><a href="#" className="relative inline-block hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-red-500 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">La maison Isotoner</a></li>

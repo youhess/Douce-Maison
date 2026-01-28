@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Menu, Search, Heart, User, ShoppingBag, X } from 'lucide-react';
+import { Menu, Search, Heart, User, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent } from '@/components/ui/navigation-menu';
@@ -127,16 +127,15 @@ const megaMenuData = {
 export const Header: React.FC = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
-    const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
     return (
-        <header className="sticky top-0 z-[100] w-full bg-white border-b border-gray-100 shadow-sm transition-all duration-300" onMouseLeave={() => setHoveredLink(null)}>
-            <div className="container mx-auto px-4 h-16 md:h-[var(--header-height,80px)] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[auto_1fr_auto] xl:grid-cols-[149px_1fr_auto] gap-4 items-center max-w-[1500px]">
+        <header className="sticky top-0 z-[100] w-full bg-white border-b border-gray-100 shadow-sm transition-all duration-300">
+            <div className="container mx-auto px-4 h-16 md:h-[var(--header-height,80px)] flex gap-4 items-center max-w-[1500px]">
                 
 
 
                 {/* Logo Section */}
-                <div className="flex justify-start items-center transition-transform hover:scale-105 duration-200 relative z-[101]">
+                <div className="flex-none flex justify-start items-center transition-transform hover:scale-105 duration-200 relative z-[101]">
                     <a href="/" className="header-logo block w-[120px] lg:w-[149px]">
                         <svg className="fill-primary w-[149px] h-auto transition-header" width="99" height="23" viewBox="0 0 99 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 6.71981C1.94343 6.73698 3.91157 7.12327 5.92089 6.26484V19.1412C5.88881 19.5069 5.91666 19.8755 6.00323 20.2314C6.11852 20.5405 6.36557 20.9697 6.59615 21.0212C6.95967 21.0374 7.31177 20.8868 7.55963 20.6092C7.78343 20.2889 7.94052 19.9234 8.02078 19.5361C8.30077 18.4717 8.8031 17.9309 9.62659 17.8193C10.3812 17.7531 11.0939 18.1899 11.4053 18.9095C11.7321 19.7226 11.4758 20.6632 10.7877 21.1757C10.7511 21.2148 10.723 21.2616 10.7054 21.3131C12.5329 22.1358 14.6437 21.8702 16.231 20.6177C17.5238 19.3988 17.2933 17.536 15.6463 16.875C14.6169 16.4458 13.5052 16.2569 12.4182 15.9307C11.7512 15.7247 11.0595 15.5273 10.4089 15.2526C8.83214 14.605 7.83475 12.9727 7.93843 11.2094C7.86217 9.50929 8.79854 7.93593 10.2936 7.25204C12.4272 6.23927 14.8596 6.1528 17.0545 7.01168C17.9124 7.24472 18.49 8.08112 18.4297 9.00323C18.3729 9.85415 17.7983 10.5708 17.005 10.7802C16.2361 10.9585 15.4424 10.6152 15.0204 9.92174C14.5391 9.11663 14.7086 8.06382 15.4157 7.46664C15.4651 7.39797 15.5145 7.32929 15.6298 7.14044C13.8593 6.84858 12.2288 6.72839 10.7877 7.93878C10.1376 8.3335 9.79604 9.11189 9.93468 9.88272C10.0733 10.6535 10.6622 11.2501 11.4053 11.3725C12.4581 11.6619 13.5246 11.8939 14.6005 12.0678C15.0204 12.1537 15.4239 12.2567 15.8769 12.3768C17.4852 12.666 18.7649 13.9424 19.1132 15.6045C19.6016 17.4763 18.9136 19.4666 17.3921 20.5834C15.0476 22.4749 11.874 22.808 9.21484 21.4418C9.01662 21.3485 8.83331 21.224 8.67134 21.0727C8.52873 20.9295 8.4042 20.768 8.30077 20.592C7.11494 22.0771 5.64913 22.1114 4.18332 21.665C3.05477 21.2786 2.27192 20.2064 2.21519 18.9696C2.12462 18.3818 2.07508 17.7879 2.06696 17.1926C2.06696 14.2654 2.06696 11.3467 2.06696 8.41091V7.40655H0C0 7.18336 0 6.943 0 6.71981Z"></path>
@@ -150,7 +149,7 @@ export const Header: React.FC = () => {
                 </div>
 
                 {/* Nav (Desktop) */}
-                <div className="hidden xl:flex justify-start px-8">
+                <div className="hidden xl:flex flex-1 justify-start px-8">
                      <NavigationMenu className="static" viewportClassName="!w-full !max-w-none mt-0 rounded-none border-t border-x-0 border-b-0 shadow-lg !origin-top">
                         <NavigationMenuList className="gap-2 xl:gap-4 text-[15px]">
                             {navLinks.map((link) => {
@@ -165,9 +164,9 @@ export const Header: React.FC = () => {
                                                 {link.name}
                                             </NavigationMenuTrigger>
                                             <NavigationMenuContent>
-                                                <div className="w-[100vw] lg:w-[940px] xl:w-[1240px] p-6 lg:p-8 bg-white mx-auto grid grid-cols-5 gap-8">
+                                                <div className="w-[100vw] lg:w-[940px] xl:w-[1240px] p-6 lg:p-8 bg-white mx-auto flex gap-8">
                                                     {megaMenuData.categories.map((category, idx) => (
-                                                        <div key={idx} className="flex flex-col gap-4">
+                                                        <div key={idx} className="flex flex-col gap-4 flex-1">
                                                             <h3 className="font-bold text-sm tracking-wider uppercase mb-1">{category.title}</h3>
                                                             
                                                             <ul className="flex flex-col gap-2">
@@ -180,7 +179,6 @@ export const Header: React.FC = () => {
                                                                             >
                                                                                  {/* Icons - simplified matching logic just for demo */}
                                                                                 {sublink.label}
-                                                                                {sublink.badge && <Badge variant="secondary" className="bg-[#FC2F2F] text-white hover:bg-[#FC2F2F] h-4 px-1 text-[9px]">{sublink.badge}</Badge>}
                                                                             </a>
                                                                         </NavigationMenuLink>
                                                                     </li>
@@ -239,7 +237,7 @@ export const Header: React.FC = () => {
                 </div>
 
                 {/* Icons Right */}
-                <div className="flex justify-end items-center gap-1 md:gap-2">
+                <div className="flex-none flex justify-end items-center gap-1 md:gap-2">
                      <Button variant="ghost" className="hidden xl:flex bg-[#F9F9F9] hover:bg-gray-100 text-xs font-semibold px-4 py-2 h-auto normal-case rounded-sm border-0 mr-2 text-gray-700 transition-colors">
                         La marque
                     </Button>
