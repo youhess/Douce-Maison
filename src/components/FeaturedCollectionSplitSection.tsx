@@ -7,40 +7,40 @@ const products = [
         id: 1, 
         title: 'Chaussons mules fourrées Femme Camel', 
         price: '42,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20camel%20furry%20mule%20slippers%20for%20women%20on%20white%20background%20studio%20lighting',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20camel%20furry%20mule%20slippers%20for%20women%20side%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 2, 
         title: 'Chaussons mules Homme Cuir Camel', 
         price: '47,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20men%20camel%20leather%20mule%20slippers%20on%20white%20background%20studio%20lighting',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20men%20camel%20leather%20mule%20slippers%20angled%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['40', '41', '42', '43', '44', '45']
     },
     { 
         id: 3, 
         title: 'Chaussons ballerines Femme Camel Brillants', 
         price: '21,99€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20shiny%20camel%20ballerina%20slippers%20for%20women%20on%20white%20background',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20shiny%20camel%20ballerina%20slippers%20for%20women%20top%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 4, 
         title: 'Chaussons bottillons bas Femme Camel', 
         price: '34,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20camel%20low%20ankle%20boot%20slippers%20for%20women%20on%20white%20background',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20camel%20low%20ankle%20boot%20slippers%20for%20women%20side%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 5, 
         title: 'Chaussons mules fourrées Femme Noir', 
         price: '42,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20black%20furry%20mule%20slippers%20for%20women%20on%20white%20background',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20black%20furry%20mule%20slippers%20for%20women%20angled%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['36', '37', '38', '39', '40']
     },
 ];
@@ -57,8 +57,8 @@ export const FeaturedCollectionSplitSection: React.FC = () => {
         
         {/* Left Column: Sticky Banner */}
         <div className="hidden lg:block lg:sticky lg:top-[100px] relative w-[1200px] h-[900px] rounded-md overflow-hidden group">
-             <img 
-                src="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=cozy%20winter%20atmosphere%20interior%20with%20warm%20slippers%20on%20a%20fluffy%20rug%20near%20fireplace%20warm%20lighting&width=1200&height=900" 
+                 <img 
+                     src="/images/lifestyle-banner.svg" 
                 alt="Douceur Confort" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
              />
@@ -74,8 +74,8 @@ export const FeaturedCollectionSplitSection: React.FC = () => {
 
         {/* Mobile Banner Alternative - to prevent layout breaking on small screens if standard banner is fixed 1200px */}
         <div className="lg:hidden relative w-full aspect-square rounded-md overflow-hidden group">
-             <img 
-                src="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=cozy%20winter%20atmosphere%20interior%20with%20warm%20slippers%20on%20a%20fluffy%20rug%20near%20fireplace%20warm%20lighting&width=800&height=800" 
+                 <img 
+                     src="/images/lifestyle-banner.svg" 
                 alt="Douceur Confort" 
                 className="absolute inset-0 w-full h-full object-cover"
              />

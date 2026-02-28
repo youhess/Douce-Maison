@@ -31,28 +31,28 @@ const recommendations = [
         title: "Parapluie Auto Noir",
         price: "24,90€",
         variant: "noiruni / TU",
-        image: "https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=black%20automatic%20umbrella%20product%20photo%20clean%20background&width=200&height=200"
+        image: "/images/recommendation-item.svg"
     },
     {
         id: 2,
         title: "Gants Femme polaire douce Noir",
         price: "10,99€",
         variant: "noir / TU",
-        image: "https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=women%20black%20gloves%20soft%20fleece%20product%20photo%20neutral%20background&width=200&height=200"
+        image: "/images/recommendation-item.svg"
     },
     {
         id: 3,
         title: "Parasol de plage Rayure mixte",
         price: "38,99€",
         variant: "rayure mixte marine / TU",
-        image: "https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=striped%20beach%20parasol%20product%20photo%20clean%20background&width=200&height=200"
+        image: "/images/recommendation-item.svg"
     },
     {
         id: 4,
         title: "Chaussons mules Femme Noir rayures",
         price: "19,99€",
         variant: "noir / 36",
-        image: "https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=women%20striped%20black%20slippers%20product%20photo%20clean%20background&width=200&height=200"
+        image: "/images/recommendation-item.svg"
     }
 ];
 
@@ -63,31 +63,31 @@ const megaMenuData = {
             title: "CHAUSSONS",
             links: [
                 { label: "Voir tous les chaussons", href: "#", underline: true },
-                { label: "Ballerines", href: "#", icon: "https://image.pollinations.ai/prompt/ballerines" },
-                { label: "Mules", href: "#", icon: "https://image.pollinations.ai/prompt/mules" },
-                { label: "Charentaises", href: "#", icon: "https://image.pollinations.ai/prompt/charentaises" },
-                { label: "Bottillons", href: "#", icon: "https://image.pollinations.ai/prompt/bottillons" },
+                { label: "Ballerines", href: "#", icon: "/images/category-card.svg" },
+                { label: "Mules", href: "#", icon: "/images/category-card.svg" },
+                { label: "Charentaises", href: "#", icon: "/images/category-card.svg" },
+                { label: "Bottillons", href: "#", icon: "/images/category-card.svg" },
             ],
             extra: [
                 { label: "CHAUSSONS EXTRA-LIGHT", href: "#" },
                 { label: "CHAUSSETTES D'INTÉRIEUR", href: "#" },
                 { label: "VÊTEMENTS D'INTÉRIEUR", href: "#" },
-                { label: "Hauts", href: "#", icon: "https://image.pollinations.ai/prompt/woman_shirt" },
-                { label: "Bas", href: "#", icon: "https://image.pollinations.ai/prompt/woman_pants" },
+                { label: "Hauts", href: "#", icon: "/images/category-card.svg" },
+                { label: "Bas", href: "#", icon: "/images/category-card.svg" },
             ]
         },
         {
             title: "CHAUSSURES",
             links: [
                 { label: "Voir toutes les chaussures", href: "#", underline: true },
-                { label: "Baskets", href: "#", icon: "https://image.pollinations.ai/prompt/sneakers" },
-                { label: "Sabots", href: "#", icon: "https://image.pollinations.ai/prompt/clogs" },
-                { label: "Ballerines", href: "#", icon: "https://image.pollinations.ai/prompt/ballerinas" },
-                { label: "Bottes de pluie", href: "#", icon: "https://image.pollinations.ai/prompt/rainboots" },
-                { label: "Bottines", href: "#", icon: "https://image.pollinations.ai/prompt/ankleboots" },
-                { label: "Sandales et espadrilles", href: "#", icon: "https://image.pollinations.ai/prompt/sandals" },
-                { label: "Mules claquettes", href: "#", icon: "https://image.pollinations.ai/prompt/slides" },
-                { label: "Tongs", href: "#", icon: "https://image.pollinations.ai/prompt/flipflops" },
+                { label: "Baskets", href: "#", icon: "/images/category-card.svg" },
+                { label: "Sabots", href: "#", icon: "/images/category-card.svg" },
+                { label: "Ballerines", href: "#", icon: "/images/category-card.svg" },
+                { label: "Bottes de pluie", href: "#", icon: "/images/category-card.svg" },
+                { label: "Bottines", href: "#", icon: "/images/category-card.svg" },
+                { label: "Sandales et espadrilles", href: "#", icon: "/images/category-card.svg" },
+                { label: "Mules claquettes", href: "#", icon: "/images/category-card.svg" },
+                { label: "Tongs", href: "#", icon: "/images/category-card.svg" },
             ]
         },
         {
@@ -95,32 +95,32 @@ const megaMenuData = {
             links: [
                 { label: "Voir tous les parapluies", href: "#", underline: true },
                 { label: "Ligne XTRA SOLIDE", href: "#", badge: "X-TRA SOLIDE" },
-                { label: "Parapluies pliants", href: "#", icon: "https://image.pollinations.ai/prompt/folded_umbrella" },
-                { label: "Parapluies canne", href: "#", icon: "https://image.pollinations.ai/prompt/cane_umbrella" },
-                { label: "Cloches transparents", href: "#", icon: "https://image.pollinations.ai/prompt/transparent_umbrella" },
-                { label: "Parapluies Anti-UV", href: "#", icon: "https://image.pollinations.ai/prompt/uv_umbrella" },
+                { label: "Parapluies pliants", href: "#", icon: "/images/category-card.svg" },
+                { label: "Parapluies canne", href: "#", icon: "/images/category-card.svg" },
+                { label: "Cloches transparents", href: "#", icon: "/images/category-card.svg" },
+                { label: "Parapluies Anti-UV", href: "#", icon: "/images/category-card.svg" },
             ],
             extraTitle: "PARASOLS",
             extra: [
-                { label: "Parasols de plage", href: "#", icon: "https://image.pollinations.ai/prompt/beach_parasol" },
+                { label: "Parasols de plage", href: "#", icon: "/images/category-card.svg" },
             ]
         },
         {
             title: "ACCESSOIRES",
             links: [
-                { label: "Gants et Mitaines", href: "#", icon: "https://image.pollinations.ai/prompt/gloves" },
-                { label: "Bonnets et Écharpes", href: "#", icon: "https://image.pollinations.ai/prompt/scarf" },
-                { label: "Loupes de lecture", href: "#", icon: "https://image.pollinations.ai/prompt/reading_glasses" },
-                { label: "Ceintures", href: "#", icon: "https://image.pollinations.ai/prompt/belt" },
-                { label: "Petite maroquinerie", href: "#", icon: "https://image.pollinations.ai/prompt/wallet" },
-                { label: "Lunettes de soleil", href: "#", icon: "https://image.pollinations.ai/prompt/sunglasses" },
-                { label: "Chapeaux", href: "#", icon: "https://image.pollinations.ai/prompt/hat" },
+                { label: "Gants et Mitaines", href: "#", icon: "/images/category-card.svg" },
+                { label: "Bonnets et Écharpes", href: "#", icon: "/images/category-card.svg" },
+                { label: "Loupes de lecture", href: "#", icon: "/images/category-card.svg" },
+                { label: "Ceintures", href: "#", icon: "/images/category-card.svg" },
+                { label: "Petite maroquinerie", href: "#", icon: "/images/category-card.svg" },
+                { label: "Lunettes de soleil", href: "#", icon: "/images/category-card.svg" },
+                { label: "Chapeaux", href: "#", icon: "/images/category-card.svg" },
             ]
         }
     ],
     featuredImages: [
-        { label: "CHAUSSONS", image: "https://image.pollinations.ai/prompt/cozy_slippers" },
-        { label: "GANTS", image: "https://image.pollinations.ai/prompt/leather_gloves" },
+        { label: "CHAUSSONS", image: "/images/menu-featured-1.svg" },
+        { label: "GANTS", image: "/images/menu-featured-2.svg" },
     ]
 };
 

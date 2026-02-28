@@ -6,40 +6,40 @@ const products = [
         id: 1, 
         title: 'Chaussons ballerines Femme Nœud semelle ergonomique', 
         price: '39,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20cozy%20beige%20ballerina%20slippers%20for%20women%20with%20small%20bow%20on%20white%20background%20studio%20lighting',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20cozy%20beige%20ballerina%20slippers%20for%20women%20with%20small%20bow%20side%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['36', '37', '38', '39', '40', '41']
     },
     { 
         id: 2, 
         title: 'Chaussons ballerines Femme Grand Nœud', 
         price: '33,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20black%20velvet%20ballerina%20slippers%20for%20women%20with%20large%20ribbon%20bow%20on%20white%20background',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20black%20velvet%20ballerina%20slippers%20for%20women%20with%20large%20ribbon%20bow%20top%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 3, 
         title: 'Chaussons mules Femme talon plateforme 2,5 cm', 
         price: '34,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20striped%20colorful%20mule%20slippers%20for%20women%20with%20platform%20heel%20on%20white%20background',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20striped%20colorful%20mule%20slippers%20for%20women%20with%20platform%20heel%20side%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['35/36', '37/38', '39/40', '41/42']
     },
     { 
         id: 4, 
         title: 'Chaussons mocassins Homme', 
         price: '45,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20grey%20suede%20moccasin%20slippers%20for%20men%20on%20white%20background',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20grey%20suede%20moccasin%20slippers%20for%20men%20angled%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['40', '41', '42', '43', '44', '45']
     },
      { 
         id: 5, 
         title: 'Chaussons mules Femme talon plateforme 2,5 cm', 
         price: '34,90€', 
-        image1: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20leopard%20print%20mule%20slippers%20for%20women%20with%20platform%20heel%20on%20white%20background',
-        image2: 'https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=product%20photography%20of%20leopard%20print%20mule%20slippers%20for%20women%20with%20platform%20heel%20side%20view%20on%20white%20background',
+        image1: '/images/product-main.svg',
+        image2: '/images/product-alt.svg',
         sizes: ['35/36', '37/38', '39/40']
     },
 ];

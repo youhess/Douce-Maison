@@ -48,10 +48,10 @@ export const HeroSliderSection: React.FC = () => {
             <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-[#F5F5F5] flex items-center justify-center overflow-hidden">
                 <a href="#" className='block w-full h-full relative'>
                      <picture className="w-full h-full object-cover">
-                        <source media="(min-width: 1024px)" srcSet="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=large%20fashion%20sale%20banner%20winter%20collection%20clean%20minimal%20layout&width=1920&height=860" />
+                        <source media="(min-width: 1024px)" srcSet="/images/hero-sale-desktop.svg" />
                         <img 
                             className="w-full h-full object-cover" 
-                            src="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=mobile%20fashion%20sale%20banner%20winter%20collection%20clean%20minimal%20layout&width=375&height=500" 
+                          src="/images/hero-sale-mobile.svg" 
                             alt="SOLDES" 
                         />
                     </picture>
@@ -71,10 +71,10 @@ export const HeroSliderSection: React.FC = () => {
             <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-slate-100 flex items-center justify-center overflow-hidden">
                  <a href="#" className='block w-full h-full relative'>
                     <picture className="w-full h-full object-cover block">
-                        <source media="(min-width: 1024px)" srcSet="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=elegant%20gloves%20collection%20hero%20banner%20studio%20lighting%20dark%20background&width=1920&height=860" />
+                        <source media="(min-width: 1024px)" srcSet="/images/hero-gloves-desktop.svg" />
                         <img 
                             className="w-full h-full object-cover" 
-                            src="https://aidp.juejin.cn/agentic/api/v1/tool/text2image?prompt=gloves%20collection%20hero%20banner%20studio%20lighting%20dark%20background%20mobile&width=375&height=500" 
+                          src="/images/hero-gloves-mobile.svg" 
                             alt="COLLECTION GANTS" 
                         />
                     </picture>

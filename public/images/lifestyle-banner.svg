@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Lifestyle banner">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#9a8b7a"/>
+      <stop offset="100%" stop-color="#6f6254"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="120" y="150" width="430" height="600" rx="24" fill="#c9b8a4" opacity="0.55"/>
+  <circle cx="860" cy="300" r="160" fill="#b7a793" opacity="0.55"/>
+  <rect x="680" y="480" width="320" height="200" rx="24" fill="#d6c7b5" opacity="0.45"/>
+  <text x="110" y="110" fill="#f6f1ea" font-family="Arial, sans-serif" font-size="54" font-weight="700">Douceur & Confort</text>
+</svg>
