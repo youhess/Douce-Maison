@@ -31,28 +31,28 @@ const recommendations = [
         title: "Parapluie Auto Noir",
         price: "24,90€",
         variant: "noiruni / TU",
-        image: "/images/recommendation-item.svg"
+        image: "https://picsum.photos/seed/reco-parapluie-auto/400/400"
     },
     {
         id: 2,
         title: "Gants Femme polaire douce Noir",
         price: "10,99€",
         variant: "noir / TU",
-        image: "/images/recommendation-item.svg"
+        image: "https://picsum.photos/seed/reco-gants-polaire/400/400"
     },
     {
         id: 3,
         title: "Parasol de plage Rayure mixte",
         price: "38,99€",
         variant: "rayure mixte marine / TU",
-        image: "/images/recommendation-item.svg"
+        image: "https://picsum.photos/seed/reco-parasol-rayure/400/400"
     },
     {
         id: 4,
         title: "Chaussons mules Femme Noir rayures",
         price: "19,99€",
         variant: "noir / 36",
-        image: "/images/recommendation-item.svg"
+        image: "https://picsum.photos/seed/reco-mules-rayures/400/400"
     }
 ];
 
@@ -63,31 +63,31 @@ const megaMenuData = {
             title: "CHAUSSONS",
             links: [
                 { label: "Voir tous les chaussons", href: "#", underline: true },
-                { label: "Ballerines", href: "#", icon: "/images/category-card.svg" },
-                { label: "Mules", href: "#", icon: "/images/category-card.svg" },
-                { label: "Charentaises", href: "#", icon: "/images/category-card.svg" },
-                { label: "Bottillons", href: "#", icon: "/images/category-card.svg" },
+                { label: "Ballerines", href: "#", icon: "https://picsum.photos/seed/icon-ballerines/300/300" },
+                { label: "Mules", href: "#", icon: "https://picsum.photos/seed/icon-mules/300/300" },
+                { label: "Charentaises", href: "#", icon: "https://picsum.photos/seed/icon-charentaises/300/300" },
+                { label: "Bottillons", href: "#", icon: "https://picsum.photos/seed/icon-bottillons/300/300" },
             ],
             extra: [
                 { label: "CHAUSSONS EXTRA-LIGHT", href: "#" },
                 { label: "CHAUSSETTES D'INTÉRIEUR", href: "#" },
                 { label: "VÊTEMENTS D'INTÉRIEUR", href: "#" },
-                { label: "Hauts", href: "#", icon: "/images/category-card.svg" },
-                { label: "Bas", href: "#", icon: "/images/category-card.svg" },
+                { label: "Hauts", href: "#", icon: "https://picsum.photos/seed/icon-hauts/300/300" },
+                { label: "Bas", href: "#", icon: "https://picsum.photos/seed/icon-bas/300/300" },
             ]
         },
         {
             title: "CHAUSSURES",
             links: [
                 { label: "Voir toutes les chaussures", href: "#", underline: true },
-                { label: "Baskets", href: "#", icon: "/images/category-card.svg" },
-                { label: "Sabots", href: "#", icon: "/images/category-card.svg" },
-                { label: "Ballerines", href: "#", icon: "/images/category-card.svg" },
-                { label: "Bottes de pluie", href: "#", icon: "/images/category-card.svg" },
-                { label: "Bottines", href: "#", icon: "/images/category-card.svg" },
-                { label: "Sandales et espadrilles", href: "#", icon: "/images/category-card.svg" },
-                { label: "Mules claquettes", href: "#", icon: "/images/category-card.svg" },
-                { label: "Tongs", href: "#", icon: "/images/category-card.svg" },
+                { label: "Baskets", href: "#", icon: "https://picsum.photos/seed/icon-baskets/300/300" },
+                { label: "Sabots", href: "#", icon: "https://picsum.photos/seed/icon-sabots/300/300" },
+                { label: "Ballerines", href: "#", icon: "https://picsum.photos/seed/icon-ballerines-chaussures/300/300" },
+                { label: "Bottes de pluie", href: "#", icon: "https://picsum.photos/seed/icon-bottes-pluie/300/300" },
+                { label: "Bottines", href: "#", icon: "https://picsum.photos/seed/icon-bottines/300/300" },
+                { label: "Sandales et espadrilles", href: "#", icon: "https://picsum.photos/seed/icon-sandales/300/300" },
+                { label: "Mules claquettes", href: "#", icon: "https://picsum.photos/seed/icon-claquettes/300/300" },
+                { label: "Tongs", href: "#", icon: "https://picsum.photos/seed/icon-tongs/300/300" },
             ]
         },
         {
@@ -95,32 +95,32 @@ const megaMenuData = {
             links: [
                 { label: "Voir tous les parapluies", href: "#", underline: true },
                 { label: "Ligne XTRA SOLIDE", href: "#", badge: "X-TRA SOLIDE" },
-                { label: "Parapluies pliants", href: "#", icon: "/images/category-card.svg" },
-                { label: "Parapluies canne", href: "#", icon: "/images/category-card.svg" },
-                { label: "Cloches transparents", href: "#", icon: "/images/category-card.svg" },
-                { label: "Parapluies Anti-UV", href: "#", icon: "/images/category-card.svg" },
+                { label: "Parapluies pliants", href: "#", icon: "https://picsum.photos/seed/icon-parapluie-pliant/300/300" },
+                { label: "Parapluies canne", href: "#", icon: "https://picsum.photos/seed/icon-parapluie-canne/300/300" },
+                { label: "Cloches transparents", href: "#", icon: "https://picsum.photos/seed/icon-cloche-transparente/300/300" },
+                { label: "Parapluies Anti-UV", href: "#", icon: "https://picsum.photos/seed/icon-parapluie-uv/300/300" },
             ],
             extraTitle: "PARASOLS",
             extra: [
-                { label: "Parasols de plage", href: "#", icon: "/images/category-card.svg" },
+                { label: "Parasols de plage", href: "#", icon: "https://picsum.photos/seed/icon-parasol-plage/300/300" },
             ]
         },
         {
             title: "ACCESSOIRES",
             links: [
-                { label: "Gants et Mitaines", href: "#", icon: "/images/category-card.svg" },
-                { label: "Bonnets et Écharpes", href: "#", icon: "/images/category-card.svg" },
-                { label: "Loupes de lecture", href: "#", icon: "/images/category-card.svg" },
-                { label: "Ceintures", href: "#", icon: "/images/category-card.svg" },
-                { label: "Petite maroquinerie", href: "#", icon: "/images/category-card.svg" },
-                { label: "Lunettes de soleil", href: "#", icon: "/images/category-card.svg" },
-                { label: "Chapeaux", href: "#", icon: "/images/category-card.svg" },
+                { label: "Gants et Mitaines", href: "#", icon: "https://picsum.photos/seed/icon-gants-mitaines/300/300" },
+                { label: "Bonnets et Écharpes", href: "#", icon: "https://picsum.photos/seed/icon-bonnets-echarpes/300/300" },
+                { label: "Loupes de lecture", href: "#", icon: "https://picsum.photos/seed/icon-loupes/300/300" },
+                { label: "Ceintures", href: "#", icon: "https://picsum.photos/seed/icon-ceintures/300/300" },
+                { label: "Petite maroquinerie", href: "#", icon: "https://picsum.photos/seed/icon-maroquinerie/300/300" },
+                { label: "Lunettes de soleil", href: "#", icon: "https://picsum.photos/seed/icon-lunettes-soleil/300/300" },
+                { label: "Chapeaux", href: "#", icon: "https://picsum.photos/seed/icon-chapeaux/300/300" },
             ]
         }
     ],
     featuredImages: [
-        { label: "CHAUSSONS", image: "/images/menu-featured-1.svg" },
-        { label: "GANTS", image: "/images/menu-featured-2.svg" },
+        { label: "CHAUSSONS", image: "https://picsum.photos/seed/menu-featured-chaussons/500/350" },
+        { label: "GANTS", image: "https://picsum.photos/seed/menu-featured-gants/500/350" },
     ]
 };
 

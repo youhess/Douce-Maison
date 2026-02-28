@@ -50,7 +50,7 @@ export const LoyaltyProgramSection: React.FC = () => {
                     {/* Right Image Column */}
                     <div className="w-full relative rounded-md overflow-hidden aspect-[3/2] shadow-lg">
                         <img 
-                            src="/images/lifestyle-banner.svg" 
+                            src="https://picsum.photos/seed/fidelite-lifestyle/1200/900" 
                             alt="Programme de fidélité" 
                             className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
                         />

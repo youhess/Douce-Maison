@@ -4,25 +4,25 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const categories = {
     femme: [
-        { title: 'CHAUSSONS', image: '/images/category-card.svg', link: '/collections/chaussons-femme' },
-        { title: 'GANTS', image: '/images/category-card.svg', link: '/collections/gants-femme' },
-        { title: 'MAILLE', image: '/images/category-card.svg', link: '/collections/bonnets-echarpes-femme' },
-        { title: 'PARAPLUIES', image: '/images/category-card.svg', link: '/collections/parapluies-femme' },
-        { title: 'BASKETS', image: '/images/category-card.svg', link: '/collections/chaussures-femme-baskets' },
-        { title: 'SABOTS', image: '/images/category-card.svg', link: '/collections/chaussures-femme-sabots' },
-        { title: 'EXTRA-LIGHT', image: '/images/category-card.svg', link: '/collections/chaussons-extra-light-femme' },
+        { title: 'CHAUSSONS', image: 'https://picsum.photos/seed/chaussons-femme/800/600', link: '/collections/chaussons-femme' },
+        { title: 'GANTS', image: 'https://picsum.photos/seed/gants-femme/800/600', link: '/collections/gants-femme' },
+        { title: 'MAILLE', image: 'https://picsum.photos/seed/maille-femme/800/600', link: '/collections/bonnets-echarpes-femme' },
+        { title: 'PARAPLUIES', image: 'https://picsum.photos/seed/parapluies-femme/800/600', link: '/collections/parapluies-femme' },
+        { title: 'BASKETS', image: 'https://picsum.photos/seed/baskets-femme/800/600', link: '/collections/chaussures-femme-baskets' },
+        { title: 'SABOTS', image: 'https://picsum.photos/seed/sabots-femme/800/600', link: '/collections/chaussures-femme-sabots' },
+        { title: 'EXTRA-LIGHT', image: 'https://picsum.photos/seed/extra-light-femme/800/600', link: '/collections/chaussons-extra-light-femme' },
     ],
     homme: [
-        { title: 'PARAPLUIES', image: '/images/category-card.svg', link: '/collections/parapluies-homme' },
-        { title: 'CHAUSSONS', image: '/images/category-card.svg', link: '/collections/chaussons-homme' },
-        { title: 'MAILLE', image: '/images/category-card.svg', link: '/collections/bonnets-echarpes-homme' },
-        { title: 'GANTS', image: '/images/category-card.svg', link: '/collections/gants-homme' },
-        { title: 'BASKETS', image: '/images/category-card.svg', link: '/collections/chaussures-homme-baskets' },
+        { title: 'PARAPLUIES', image: 'https://picsum.photos/seed/parapluies-homme/800/600', link: '/collections/parapluies-homme' },
+        { title: 'CHAUSSONS', image: 'https://picsum.photos/seed/chaussons-homme/800/600', link: '/collections/chaussons-homme' },
+        { title: 'MAILLE', image: 'https://picsum.photos/seed/maille-homme/800/600', link: '/collections/bonnets-echarpes-homme' },
+        { title: 'GANTS', image: 'https://picsum.photos/seed/gants-homme/800/600', link: '/collections/gants-homme' },
+        { title: 'BASKETS', image: 'https://picsum.photos/seed/baskets-homme/800/600', link: '/collections/chaussures-homme-baskets' },
     ],
     enfant: [
-        { title: 'PARAPLUIES', image: '/images/category-card.svg', link: '/collections/parapluies-enfant' },
-        { title: 'BOTTES DE PLUIE', image: '/images/category-card.svg', link: '/collections/chaussures-enfant-bottes-de-pluie' },
-        { title: 'CHAUSSONS', image: '/images/category-card.svg', link: '/collections/chaussons-enfant' },
+        { title: 'PARAPLUIES', image: 'https://picsum.photos/seed/parapluies-enfant/800/600', link: '/collections/parapluies-enfant' },
+        { title: 'BOTTES DE PLUIE', image: 'https://picsum.photos/seed/bottes-pluie-enfant/800/600', link: '/collections/chaussures-enfant-bottes-de-pluie' },
+        { title: 'CHAUSSONS', image: 'https://picsum.photos/seed/chaussons-enfant/800/600', link: '/collections/chaussons-enfant' },
     ],
 };
 

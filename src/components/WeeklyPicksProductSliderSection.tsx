@@ -6,40 +6,40 @@ const products = [
         id: 1, 
         title: 'Chaussons ballerines Femme Nœud semelle ergonomique', 
         price: '39,90€', 
-        image1: '/images/product-main.svg',
-        image2: '/images/product-alt.svg',
+        image1: 'https://picsum.photos/seed/ballerine-noeud-main/800/800',
+        image2: 'https://picsum.photos/seed/ballerine-noeud-alt/800/800',
         sizes: ['36', '37', '38', '39', '40', '41']
     },
     { 
         id: 2, 
         title: 'Chaussons ballerines Femme Grand Nœud', 
         price: '33,90€', 
-        image1: '/images/product-main.svg',
-        image2: '/images/product-alt.svg',
+        image1: 'https://picsum.photos/seed/ballerine-grand-noeud-main/800/800',
+        image2: 'https://picsum.photos/seed/ballerine-grand-noeud-alt/800/800',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 3, 
         title: 'Chaussons mules Femme talon plateforme 2,5 cm', 
         price: '34,90€', 
-        image1: '/images/product-main.svg',
-        image2: '/images/product-alt.svg',
+        image1: 'https://picsum.photos/seed/mule-plateforme-main/800/800',
+        image2: 'https://picsum.photos/seed/mule-plateforme-alt/800/800',
         sizes: ['35/36', '37/38', '39/40', '41/42']
     },
     { 
         id: 4, 
         title: 'Chaussons mocassins Homme', 
         price: '45,90€', 
-        image1: '/images/product-main.svg',
-        image2: '/images/product-alt.svg',
+        image1: 'https://picsum.photos/seed/mocassin-homme-main/800/800',
+        image2: 'https://picsum.photos/seed/mocassin-homme-alt/800/800',
         sizes: ['40', '41', '42', '43', '44', '45']
     },
      { 
         id: 5, 
         title: 'Chaussons mules Femme talon plateforme 2,5 cm', 
         price: '34,90€', 
-        image1: '/images/product-main.svg',
-        image2: '/images/product-alt.svg',
+        image1: 'https://picsum.photos/seed/mule-leopard-main/800/800',
+        image2: 'https://picsum.photos/seed/mule-leopard-alt/800/800',
         sizes: ['35/36', '37/38', '39/40']
     },
 ];

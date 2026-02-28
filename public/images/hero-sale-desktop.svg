@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 860" role="img" aria-label="Hero sale desktop">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#efe7dc"/><stop offset="100%" stop-color="#d9c9b2"/></linearGradient></defs>
-  <rect width="1920" height="860" fill="url(#g)"/>
-  <text x="130" y="350" fill="#4f453a" font-family="Arial, sans-serif" font-size="130" font-weight="800">SOLDES</text>
-  <text x="130" y="450" fill="#6b5f51" font-family="Arial, sans-serif" font-size="58">Collection Hiver</text>
-</svg>

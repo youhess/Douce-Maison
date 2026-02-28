@@ -3,12 +3,12 @@ import { Instagram } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const instaImages = [
-    '/images/instagram-post.svg',
-    '/images/instagram-post.svg',
-    '/images/instagram-post.svg',
-    '/images/instagram-post.svg',
-    '/images/instagram-post.svg',
-    '/images/instagram-post.svg',
+    'https://picsum.photos/seed/instagram-maille-hiver/600/600',
+    'https://picsum.photos/seed/instagram-chaussons-cosy/600/600',
+    'https://picsum.photos/seed/instagram-bottes-chaudes/600/600',
+    'https://picsum.photos/seed/instagram-parapluie-transparent/600/600',
+    'https://picsum.photos/seed/instagram-gants-elegants/600/600',
+    'https://picsum.photos/seed/instagram-chaussons-enfant/600/600',
 ];
 
 export const InstagramFeedSection: React.FC = () => {
