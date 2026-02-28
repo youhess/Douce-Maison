@@ -6,40 +6,40 @@ const products = [
         id: 1, 
         title: 'Chaussons ballerines Femme Nœud semelle ergonomique', 
         price: '39,90€', 
-        image1: 'https://picsum.photos/seed/ballerine-noeud-main/800/800',
-        image2: 'https://picsum.photos/seed/ballerine-noeud-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/ballerina,slippers,bow?lock=301',
+        image2: 'https://loremflickr.com/800/800/ballerina,slippers,bow,side?lock=302',
         sizes: ['36', '37', '38', '39', '40', '41']
     },
     { 
         id: 2, 
         title: 'Chaussons ballerines Femme Grand Nœud', 
         price: '33,90€', 
-        image1: 'https://picsum.photos/seed/ballerine-grand-noeud-main/800/800',
-        image2: 'https://picsum.photos/seed/ballerine-grand-noeud-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/black,ballerina,slippers?lock=303',
+        image2: 'https://loremflickr.com/800/800/black,ballerina,slippers,top?lock=304',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 3, 
         title: 'Chaussons mules Femme talon plateforme 2,5 cm', 
         price: '34,90€', 
-        image1: 'https://picsum.photos/seed/mule-plateforme-main/800/800',
-        image2: 'https://picsum.photos/seed/mule-plateforme-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/mule,slippers,platform?lock=305',
+        image2: 'https://loremflickr.com/800/800/mule,slippers,platform,side?lock=306',
         sizes: ['35/36', '37/38', '39/40', '41/42']
     },
     { 
         id: 4, 
         title: 'Chaussons mocassins Homme', 
         price: '45,90€', 
-        image1: 'https://picsum.photos/seed/mocassin-homme-main/800/800',
-        image2: 'https://picsum.photos/seed/mocassin-homme-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/moccasin,slippers,men?lock=307',
+        image2: 'https://loremflickr.com/800/800/moccasin,slippers,men,side?lock=308',
         sizes: ['40', '41', '42', '43', '44', '45']
     },
      { 
         id: 5, 
         title: 'Chaussons mules Femme talon plateforme 2,5 cm', 
         price: '34,90€', 
-        image1: 'https://picsum.photos/seed/mule-leopard-main/800/800',
-        image2: 'https://picsum.photos/seed/mule-leopard-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/leopard,mule,slippers?lock=309',
+        image2: 'https://loremflickr.com/800/800/leopard,mule,slippers,side?lock=310',
         sizes: ['35/36', '37/38', '39/40']
     },
 ];

@@ -31,28 +31,28 @@ const recommendations = [
         title: "Parapluie Auto Noir",
         price: "24,90€",
         variant: "noiruni / TU",
-        image: "https://picsum.photos/seed/reco-parapluie-auto/400/400"
+        image: "https://loremflickr.com/400/400/umbrella,black,product?lock=601"
     },
     {
         id: 2,
         title: "Gants Femme polaire douce Noir",
         price: "10,99€",
         variant: "noir / TU",
-        image: "https://picsum.photos/seed/reco-gants-polaire/400/400"
+        image: "https://loremflickr.com/400/400/gloves,black,product?lock=602"
     },
     {
         id: 3,
         title: "Parasol de plage Rayure mixte",
         price: "38,99€",
         variant: "rayure mixte marine / TU",
-        image: "https://picsum.photos/seed/reco-parasol-rayure/400/400"
+        image: "https://loremflickr.com/400/400/parasol,beach,stripes?lock=603"
     },
     {
         id: 4,
         title: "Chaussons mules Femme Noir rayures",
         price: "19,99€",
         variant: "noir / 36",
-        image: "https://picsum.photos/seed/reco-mules-rayures/400/400"
+        image: "https://loremflickr.com/400/400/slippers,striped,women?lock=604"
     }
 ];
 
@@ -63,31 +63,31 @@ const megaMenuData = {
             title: "CHAUSSONS",
             links: [
                 { label: "Voir tous les chaussons", href: "#", underline: true },
-                { label: "Ballerines", href: "#", icon: "https://picsum.photos/seed/icon-ballerines/300/300" },
-                { label: "Mules", href: "#", icon: "https://picsum.photos/seed/icon-mules/300/300" },
-                { label: "Charentaises", href: "#", icon: "https://picsum.photos/seed/icon-charentaises/300/300" },
-                { label: "Bottillons", href: "#", icon: "https://picsum.photos/seed/icon-bottillons/300/300" },
+                { label: "Ballerines", href: "#", icon: "https://loremflickr.com/300/300/ballerina,slippers?lock=605" },
+                { label: "Mules", href: "#", icon: "https://loremflickr.com/300/300/mule,slippers?lock=606" },
+                { label: "Charentaises", href: "#", icon: "https://loremflickr.com/300/300/slippers,home,warm?lock=607" },
+                { label: "Bottillons", href: "#", icon: "https://loremflickr.com/300/300/ankle,slippers?lock=608" },
             ],
             extra: [
                 { label: "CHAUSSONS EXTRA-LIGHT", href: "#" },
                 { label: "CHAUSSETTES D'INTÉRIEUR", href: "#" },
                 { label: "VÊTEMENTS D'INTÉRIEUR", href: "#" },
-                { label: "Hauts", href: "#", icon: "https://picsum.photos/seed/icon-hauts/300/300" },
-                { label: "Bas", href: "#", icon: "https://picsum.photos/seed/icon-bas/300/300" },
+                { label: "Hauts", href: "#", icon: "https://loremflickr.com/300/300/knitwear,top,women?lock=609" },
+                { label: "Bas", href: "#", icon: "https://loremflickr.com/300/300/loungewear,pants,women?lock=610" },
             ]
         },
         {
             title: "CHAUSSURES",
             links: [
                 { label: "Voir toutes les chaussures", href: "#", underline: true },
-                { label: "Baskets", href: "#", icon: "https://picsum.photos/seed/icon-baskets/300/300" },
-                { label: "Sabots", href: "#", icon: "https://picsum.photos/seed/icon-sabots/300/300" },
-                { label: "Ballerines", href: "#", icon: "https://picsum.photos/seed/icon-ballerines-chaussures/300/300" },
-                { label: "Bottes de pluie", href: "#", icon: "https://picsum.photos/seed/icon-bottes-pluie/300/300" },
-                { label: "Bottines", href: "#", icon: "https://picsum.photos/seed/icon-bottines/300/300" },
-                { label: "Sandales et espadrilles", href: "#", icon: "https://picsum.photos/seed/icon-sandales/300/300" },
-                { label: "Mules claquettes", href: "#", icon: "https://picsum.photos/seed/icon-claquettes/300/300" },
-                { label: "Tongs", href: "#", icon: "https://picsum.photos/seed/icon-tongs/300/300" },
+                { label: "Baskets", href: "#", icon: "https://loremflickr.com/300/300/sneakers,shoes?lock=611" },
+                { label: "Sabots", href: "#", icon: "https://loremflickr.com/300/300/clogs,shoes?lock=612" },
+                { label: "Ballerines", href: "#", icon: "https://loremflickr.com/300/300/ballerina,shoes?lock=613" },
+                { label: "Bottes de pluie", href: "#", icon: "https://loremflickr.com/300/300/rainboots,shoes?lock=614" },
+                { label: "Bottines", href: "#", icon: "https://loremflickr.com/300/300/ankleboots,shoes?lock=615" },
+                { label: "Sandales et espadrilles", href: "#", icon: "https://loremflickr.com/300/300/sandals,espadrilles?lock=616" },
+                { label: "Mules claquettes", href: "#", icon: "https://loremflickr.com/300/300/slides,mules?lock=617" },
+                { label: "Tongs", href: "#", icon: "https://loremflickr.com/300/300/flipflops,summer?lock=618" },
             ]
         },
         {
@@ -95,32 +95,32 @@ const megaMenuData = {
             links: [
                 { label: "Voir tous les parapluies", href: "#", underline: true },
                 { label: "Ligne XTRA SOLIDE", href: "#", badge: "X-TRA SOLIDE" },
-                { label: "Parapluies pliants", href: "#", icon: "https://picsum.photos/seed/icon-parapluie-pliant/300/300" },
-                { label: "Parapluies canne", href: "#", icon: "https://picsum.photos/seed/icon-parapluie-canne/300/300" },
-                { label: "Cloches transparents", href: "#", icon: "https://picsum.photos/seed/icon-cloche-transparente/300/300" },
-                { label: "Parapluies Anti-UV", href: "#", icon: "https://picsum.photos/seed/icon-parapluie-uv/300/300" },
+                { label: "Parapluies pliants", href: "#", icon: "https://loremflickr.com/300/300/folding,umbrella?lock=619" },
+                { label: "Parapluies canne", href: "#", icon: "https://loremflickr.com/300/300/cane,umbrella?lock=620" },
+                { label: "Cloches transparents", href: "#", icon: "https://loremflickr.com/300/300/transparent,umbrella?lock=621" },
+                { label: "Parapluies Anti-UV", href: "#", icon: "https://loremflickr.com/300/300/uv,umbrella?lock=622" },
             ],
             extraTitle: "PARASOLS",
             extra: [
-                { label: "Parasols de plage", href: "#", icon: "https://picsum.photos/seed/icon-parasol-plage/300/300" },
+                { label: "Parasols de plage", href: "#", icon: "https://loremflickr.com/300/300/beach,parasol?lock=623" },
             ]
         },
         {
             title: "ACCESSOIRES",
             links: [
-                { label: "Gants et Mitaines", href: "#", icon: "https://picsum.photos/seed/icon-gants-mitaines/300/300" },
-                { label: "Bonnets et Écharpes", href: "#", icon: "https://picsum.photos/seed/icon-bonnets-echarpes/300/300" },
-                { label: "Loupes de lecture", href: "#", icon: "https://picsum.photos/seed/icon-loupes/300/300" },
-                { label: "Ceintures", href: "#", icon: "https://picsum.photos/seed/icon-ceintures/300/300" },
-                { label: "Petite maroquinerie", href: "#", icon: "https://picsum.photos/seed/icon-maroquinerie/300/300" },
-                { label: "Lunettes de soleil", href: "#", icon: "https://picsum.photos/seed/icon-lunettes-soleil/300/300" },
-                { label: "Chapeaux", href: "#", icon: "https://picsum.photos/seed/icon-chapeaux/300/300" },
+                { label: "Gants et Mitaines", href: "#", icon: "https://loremflickr.com/300/300/gloves,winter?lock=624" },
+                { label: "Bonnets et Écharpes", href: "#", icon: "https://loremflickr.com/300/300/scarf,beanie?lock=625" },
+                { label: "Loupes de lecture", href: "#", icon: "https://loremflickr.com/300/300/reading,glasses?lock=626" },
+                { label: "Ceintures", href: "#", icon: "https://loremflickr.com/300/300/belt,accessory?lock=627" },
+                { label: "Petite maroquinerie", href: "#", icon: "https://loremflickr.com/300/300/wallet,leather?lock=628" },
+                { label: "Lunettes de soleil", href: "#", icon: "https://loremflickr.com/300/300/sunglasses,accessory?lock=629" },
+                { label: "Chapeaux", href: "#", icon: "https://loremflickr.com/300/300/hat,fashion?lock=630" },
             ]
         }
     ],
     featuredImages: [
-        { label: "CHAUSSONS", image: "https://picsum.photos/seed/menu-featured-chaussons/500/350" },
-        { label: "GANTS", image: "https://picsum.photos/seed/menu-featured-gants/500/350" },
+        { label: "CHAUSSONS", image: "https://loremflickr.com/500/350/slippers,cozy?lock=631" },
+        { label: "GANTS", image: "https://loremflickr.com/500/350/gloves,winter,fashion?lock=632" },
     ]
 };
 

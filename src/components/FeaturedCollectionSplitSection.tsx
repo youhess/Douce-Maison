@@ -7,40 +7,40 @@ const products = [
         id: 1, 
         title: 'Chaussons mules fourrées Femme Camel', 
         price: '42,90€', 
-        image1: 'https://picsum.photos/seed/mule-fourree-camel-main/800/800',
-        image2: 'https://picsum.photos/seed/mule-fourree-camel-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/slippers,women,camel?lock=201',
+        image2: 'https://loremflickr.com/800/800/slippers,women,camel,side?lock=202',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 2, 
         title: 'Chaussons mules Homme Cuir Camel', 
         price: '47,90€', 
-        image1: 'https://picsum.photos/seed/mule-cuir-homme-main/800/800',
-        image2: 'https://picsum.photos/seed/mule-cuir-homme-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/slippers,men,leather?lock=203',
+        image2: 'https://loremflickr.com/800/800/slippers,men,leather,side?lock=204',
         sizes: ['40', '41', '42', '43', '44', '45']
     },
     { 
         id: 3, 
         title: 'Chaussons ballerines Femme Camel Brillants', 
         price: '21,99€', 
-        image1: 'https://picsum.photos/seed/ballerine-brillante-main/800/800',
-        image2: 'https://picsum.photos/seed/ballerine-brillante-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/ballerina,slippers,women?lock=205',
+        image2: 'https://loremflickr.com/800/800/ballerina,slippers,women,top?lock=206',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 4, 
         title: 'Chaussons bottillons bas Femme Camel', 
         price: '34,90€', 
-        image1: 'https://picsum.photos/seed/bottillon-bas-main/800/800',
-        image2: 'https://picsum.photos/seed/bottillon-bas-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/ankle,slippers,women?lock=207',
+        image2: 'https://loremflickr.com/800/800/ankle,slippers,women,side?lock=208',
         sizes: ['36', '37', '38', '39', '40']
     },
     { 
         id: 5, 
         title: 'Chaussons mules fourrées Femme Noir', 
         price: '42,90€', 
-        image1: 'https://picsum.photos/seed/mule-fourree-noir-main/800/800',
-        image2: 'https://picsum.photos/seed/mule-fourree-noir-alt/800/800',
+        image1: 'https://loremflickr.com/800/800/black,slippers,women?lock=209',
+        image2: 'https://loremflickr.com/800/800/black,slippers,women,side?lock=210',
         sizes: ['36', '37', '38', '39', '40']
     },
 ];
@@ -58,7 +58,7 @@ export const FeaturedCollectionSplitSection: React.FC = () => {
         {/* Left Column: Sticky Banner */}
         <div className="hidden lg:block lg:sticky lg:top-[100px] relative w-[1200px] h-[900px] rounded-md overflow-hidden group">
                  <img 
-                     src="https://picsum.photos/seed/lifestyle-chaussons/1200/900" 
+                     src="https://loremflickr.com/1200/900/cozy,home,slippers?lock=211" 
                 alt="Douceur Confort" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
              />
@@ -75,7 +75,7 @@ export const FeaturedCollectionSplitSection: React.FC = () => {
         {/* Mobile Banner Alternative - to prevent layout breaking on small screens if standard banner is fixed 1200px */}
         <div className="lg:hidden relative w-full aspect-square rounded-md overflow-hidden group">
                  <img 
-                     src="https://picsum.photos/seed/lifestyle-chaussons-mobile/800/800" 
+                     src="https://loremflickr.com/800/800/cozy,home,slippers?lock=212" 
                 alt="Douceur Confort" 
                 className="absolute inset-0 w-full h-full object-cover"
              />

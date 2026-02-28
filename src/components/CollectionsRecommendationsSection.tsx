@@ -4,25 +4,25 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const categories = {
     femme: [
-        { title: 'CHAUSSONS', image: 'https://picsum.photos/seed/chaussons-femme/800/600', link: '/collections/chaussons-femme' },
-        { title: 'GANTS', image: 'https://picsum.photos/seed/gants-femme/800/600', link: '/collections/gants-femme' },
-        { title: 'MAILLE', image: 'https://picsum.photos/seed/maille-femme/800/600', link: '/collections/bonnets-echarpes-femme' },
-        { title: 'PARAPLUIES', image: 'https://picsum.photos/seed/parapluies-femme/800/600', link: '/collections/parapluies-femme' },
-        { title: 'BASKETS', image: 'https://picsum.photos/seed/baskets-femme/800/600', link: '/collections/chaussures-femme-baskets' },
-        { title: 'SABOTS', image: 'https://picsum.photos/seed/sabots-femme/800/600', link: '/collections/chaussures-femme-sabots' },
-        { title: 'EXTRA-LIGHT', image: 'https://picsum.photos/seed/extra-light-femme/800/600', link: '/collections/chaussons-extra-light-femme' },
+        { title: 'CHAUSSONS', image: 'https://loremflickr.com/800/600/slippers,women?lock=101', link: '/collections/chaussons-femme' },
+        { title: 'GANTS', image: 'https://loremflickr.com/800/600/gloves,women,winter?lock=102', link: '/collections/gants-femme' },
+        { title: 'MAILLE', image: 'https://loremflickr.com/800/600/scarf,knitwear,women?lock=103', link: '/collections/bonnets-echarpes-femme' },
+        { title: 'PARAPLUIES', image: 'https://loremflickr.com/800/600/umbrella,women,rain?lock=104', link: '/collections/parapluies-femme' },
+        { title: 'BASKETS', image: 'https://loremflickr.com/800/600/sneakers,women?lock=105', link: '/collections/chaussures-femme-baskets' },
+        { title: 'SABOTS', image: 'https://loremflickr.com/800/600/clogs,women,shoes?lock=106', link: '/collections/chaussures-femme-sabots' },
+        { title: 'EXTRA-LIGHT', image: 'https://loremflickr.com/800/600/slippers,minimal,light?lock=107', link: '/collections/chaussons-extra-light-femme' },
     ],
     homme: [
-        { title: 'PARAPLUIES', image: 'https://picsum.photos/seed/parapluies-homme/800/600', link: '/collections/parapluies-homme' },
-        { title: 'CHAUSSONS', image: 'https://picsum.photos/seed/chaussons-homme/800/600', link: '/collections/chaussons-homme' },
-        { title: 'MAILLE', image: 'https://picsum.photos/seed/maille-homme/800/600', link: '/collections/bonnets-echarpes-homme' },
-        { title: 'GANTS', image: 'https://picsum.photos/seed/gants-homme/800/600', link: '/collections/gants-homme' },
-        { title: 'BASKETS', image: 'https://picsum.photos/seed/baskets-homme/800/600', link: '/collections/chaussures-homme-baskets' },
+        { title: 'PARAPLUIES', image: 'https://loremflickr.com/800/600/umbrella,men,rain?lock=108', link: '/collections/parapluies-homme' },
+        { title: 'CHAUSSONS', image: 'https://loremflickr.com/800/600/slippers,men,home?lock=109', link: '/collections/chaussons-homme' },
+        { title: 'MAILLE', image: 'https://loremflickr.com/800/600/scarf,knitwear,men?lock=110', link: '/collections/bonnets-echarpes-homme' },
+        { title: 'GANTS', image: 'https://loremflickr.com/800/600/gloves,men,winter?lock=111', link: '/collections/gants-homme' },
+        { title: 'BASKETS', image: 'https://loremflickr.com/800/600/sneakers,men?lock=112', link: '/collections/chaussures-homme-baskets' },
     ],
     enfant: [
-        { title: 'PARAPLUIES', image: 'https://picsum.photos/seed/parapluies-enfant/800/600', link: '/collections/parapluies-enfant' },
-        { title: 'BOTTES DE PLUIE', image: 'https://picsum.photos/seed/bottes-pluie-enfant/800/600', link: '/collections/chaussures-enfant-bottes-de-pluie' },
-        { title: 'CHAUSSONS', image: 'https://picsum.photos/seed/chaussons-enfant/800/600', link: '/collections/chaussons-enfant' },
+        { title: 'PARAPLUIES', image: 'https://loremflickr.com/800/600/umbrella,kids,rain?lock=113', link: '/collections/parapluies-enfant' },
+        { title: 'BOTTES DE PLUIE', image: 'https://loremflickr.com/800/600/rainboots,kids?lock=114', link: '/collections/chaussures-enfant-bottes-de-pluie' },
+        { title: 'CHAUSSONS', image: 'https://loremflickr.com/800/600/slippers,kids,home?lock=115', link: '/collections/chaussons-enfant' },
     ],
 };
 

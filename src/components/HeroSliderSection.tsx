@@ -48,10 +48,10 @@ export const HeroSliderSection: React.FC = () => {
             <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-[#F5F5F5] flex items-center justify-center overflow-hidden">
                 <a href="#" className='block w-full h-full relative'>
                      <picture className="w-full h-full object-cover">
-                        <source media="(min-width: 1024px)" srcSet="https://picsum.photos/seed/hero-soldes-desktop/1920/860" />
+                        <source media="(min-width: 1024px)" srcSet="https://loremflickr.com/1920/860/fashion,winter,sale?lock=401" />
                         <img 
                             className="w-full h-full object-cover" 
-                          src="https://picsum.photos/seed/hero-soldes-mobile/375/500" 
+                          src="https://loremflickr.com/375/500/fashion,winter,sale?lock=402" 
                             alt="SOLDES" 
                         />
                     </picture>
@@ -71,10 +71,10 @@ export const HeroSliderSection: React.FC = () => {
             <div className="relative w-full aspect-[375/500] md:aspect-[1920/860] max-h-[860px] bg-slate-100 flex items-center justify-center overflow-hidden">
                  <a href="#" className='block w-full h-full relative'>
                     <picture className="w-full h-full object-cover block">
-                        <source media="(min-width: 1024px)" srcSet="https://picsum.photos/seed/hero-gants-desktop/1920/860" />
+                        <source media="(min-width: 1024px)" srcSet="https://loremflickr.com/1920/860/gloves,fashion,winter?lock=403" />
                         <img 
                             className="w-full h-full object-cover" 
-                          src="https://picsum.photos/seed/hero-gants-mobile/375/500" 
+                          src="https://loremflickr.com/375/500/gloves,fashion,winter?lock=404" 
                             alt="COLLECTION GANTS" 
                         />
                     </picture>
